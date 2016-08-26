@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<jnlp codebase="http://www.cosmicconfusion.net/game/"
+href="http://www.cosmicconfusion.net/game/jnlp/cvgame.jnlp">
+  <information>
+    <title>TheConsciouseVideogame</title>
+    <vendor>TheDog</vendor>
+    <homepage href="."/>
+    <description>See the overview webpage</description>
+    <offline-allowed/>
+    <icon href="jnlp/cardback.gif"/>
+  </information>
+  <security>
+    <all-permissions/> 
+  </security>
+  <resources>
+    <j2se version="1.4+"/>
+    <jar href="CBGame.jar"/>
+  </resources>
+  <application-desc main-class="cbg.ui.ConsciousBoardgameGUI"/>
+</jnlp>

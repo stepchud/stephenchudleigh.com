@@ -1,0 +1,63 @@
+<script type="text/javascript">
+  var poems = [
+    'adropintheocean',
+    'automatismschism',
+    'blessings',
+    'btdt',
+    'circles',
+    'easter',
+    'everythingispossible',
+    'goodbye',
+    'goodluck',
+    'goyourway',
+    'hiding',
+    'highcue',
+    'holdthatthought',
+    'howitusedtobe',
+    'ibroughtyouaflower',
+    'icebear',
+    'identity',
+    'immaterial',
+    'infinitewhim',
+    'journal1',
+    'journal2',
+    'kindastrange',
+    'lonesomeseagull',
+    'myturn',
+    'notetoself',
+    'pickinandpluckin',
+    'questions',
+    'reasontorejoice',
+    'returningtodarkness',
+    'revolver',
+    'someday',
+    'sonice',
+    'sorrowguiltregret',
+    'sta.eulalia',
+    'swimmingbackwards',
+    'takingthebushome',
+    'thegame',
+    'theocean',
+    'thoughtssublime',
+    'toasttheteacher',
+    'trappedinthepast',
+    'twocrazybrahmins',
+    'uncertaintyiscertain',
+    'whatalwaysgrows',
+    'whatsbetter',
+    'yourgravity',
+    'rem/clumpy',
+    'rem/coldpenis',
+    'rem/laura',
+    'rem/thependulum'
+  ];
+  function randomPoem(){
+    var rand = Math.floor(Math.random() * poems.length);
+    document.location.href = '/words/'+poems[rand]+'.htm';
+  }
+</script>
+
+<div class="poetry-nav">
+<a href="/words">&lt; Index</a>
+<a href="#" onclick="randomPoem();">Random</a>
+</div>

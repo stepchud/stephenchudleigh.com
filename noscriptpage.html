@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Page Switcher</title>
+<script>
+// This code should go in the
+// head element of your page
+
+// You may use any labels you want.
+// The first label must be the
+// text shown when no choice has
+// been made yet
+var labels = new Array(
+  "Choose Your Destination",
+  "Page One",
+  "Page Two",
+  "Page Three",
+  "Page Four"
+);
+
+// These URLs correspond to the
+// labels. The default choice gets
+// no URL
+var urls = new Array(
+  "",
+  "one.html",
+  "two.html",
+  "three.html",
+  "four.html"
+);
+
+function switchPages(index) {
+  if (index == 0) {
+    return;
+  }
+  location.href = urls[index];
+}
+
+function forceNoChoice() {
+  // We don't want anything selected when the user
+  // backs up to or otherwise revisits this page
+  // without reloading it. So "forget" our selection
+  // when we leave the page.
+  var selector = document.getElementById('page_selector');
+  selector.selectedIndex = 0;
+}
+</script>
+</head>
+<!-- You must have this onUnload handler or the
+  back button will still show a choice -->
+<body onUnload="forceNoChoice()">
+<div align="center">
+<script>
+// Put this script element where you
+// actually want the menu to appear
+document.write('<select name="page_selector" id="page_selector"' +
+'onChange="switchPages(selectedIndex)">');
+for (i = 0; (i < labels.length); i++) {
+  document.write('<option value="' + i + '">' + labels[i] + '</option>');
+}
+document.write('</select>');
+<noscript>
+<a href="one.html">Page One</a> |
+<a href="two.html">Page Two</a> |
+<a href="three.html">Page Three</a> |
+<a href="four.html">Page Four</a>
+</noscript>
+</script>
+</div>
+</body>
+</html>

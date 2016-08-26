@@ -1,0 +1,2 @@
+AddHandler server-parsed .htm
+Options Indexes FollowSymLinks Includes 

@@ -1,0 +1,4 @@
+AddType application/x-java-jnlp-file    .jnlp
+AddType application/x-java-archive-diff .jardiff
+AddHandler server-parsed .shtml .html 
+Options Indexes FollowSymLinks Includes 

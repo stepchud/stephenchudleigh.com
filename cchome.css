@@ -1,0 +1,151 @@
+body {
+  margin: 0px;
+}
+.main {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: #000066;
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+.content {
+  color: #FFFFFF;
+  background-color: #660000;
+  margin: 71px auto;
+  padding: 6px;
+  width: 70%;
+  text-align: center;
+}
+.content table {
+  color: #FFFFFF;
+}
+.midwidth {
+  width: 60%;
+  margin-left: 20%;
+}
+.narrowwidth {
+  width: 36%;
+  margin-left: 31%;
+}
+.nav-content {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+#navmenu {
+  background-color: #FFFFFF;
+  margin: 0px auto;
+  left: 0;
+  height: 73px;
+  width: 100%;
+  z-index: 40;
+  overflow: hide;
+}
+#navmenu ul {
+  margin: 0 auto;
+  list-style-type: none;
+  width: 560px;
+}
+#navmenu li {
+  float: left;
+  height: 58px;
+  width: 100px;
+  text-align: center;
+}
+#navmenu li a.textlink {
+  color: #660000;
+  text-decoration: none;
+  display: block;
+  height: 58px;
+  width: 100%;
+  padding: 15px 0px 0px 0px;
+}
+#navmenu li a.imglink {
+  color: #660000;
+  text-decoration: none;
+  display: block;
+  height: 69px;
+  width: 100%;
+  border: 0px 0px;
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+#navmenu li a:hover {
+  color: white;
+  background: #660000;
+}
+#navmenu a .background {
+  position: relative;
+  z-index: -1;
+  top: 1;
+  left: 0;
+  height: 69px;
+  width: 100px;
+  background-image: url('/img/cards/sAs.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.5;
+  filter:alpha(opacity: 50);
+}
+#gamecontent {
+  text-align: left;
+  padding: 6px;
+}
+#gameimg {
+  float: right;
+}
+.inputtext {
+  width: 90%;
+}
+td.label {
+  width: 100px;
+}
+li {
+  list-style: none;
+}
+.two-table {
+  display: table;
+  width: 100%;
+}
+.lcell {
+  display: table-cell;
+  width: 50%;
+  text-align: right;
+  padding-right: 10px;
+}
+.rcell {
+  display: table-cell;
+  width: 50%;
+  text-align: left;
+  padding-left: 10px;
+}
+#bannertext {
+  padding: 6px 0 0 0;
+  font-style: oblique;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: #CCCCCC;
+}
+.menuspacer {
+  height: 71px;
+}
+a:link {
+  color: #FAFFC9;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #555555;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover:visited {
+  color: #555555;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: #AAAAAA;
+  text-decoration: none;
+  font-weight: bold;
+}
