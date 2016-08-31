@@ -1,106 +1,13 @@
-body { background-color: #FFFFDD; }
 .main {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
   font-weight: lighter;
   color: #000066;
   padding: 0px 0px;
   margin: 0px 0px;
 }
-.content {
-  color: #FFFFFF;
-  background-color: #660000;
-  margin: 71 auto;
-  padding: 6px;
-  width: 70%;
-}
-.midwidth {
-  width: 60%;
-  margin-left: 20%;
-}
-.narrowwidth {
-  width: 36%;
-  margin-left: 31%;
-}
-#navmenu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 70px;
-  width: 100%;
-  z-index: 40;
-  background-color: #FFFFDD;
-  background: #FFFFDD;
-  overflow: hide;
-}
-#navmenu ul {
-  margin: 0 auto;
-  list-style-type: none;
-  width: 560px;
-}
-#navmenu li {
-  float: left;
-  height: 58px;
-  width: 100px;
-  background-color: #FFFFDD;
-  text-align: center;
-}
-#navmenu li a {
-  color: #660000;
-  text-decoration: none;
-  display: block;
-  height: 58px;
-  width: 100%;
-  padding: 12px 0px 0px 0px;
-}
-#navmenu li a:hover {
-  color: #CC0000;
-  background: #000000;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-#navmenu .background {
-  height: 69px;
-  width: 100px; 
-}
-#gamecontent {
-  text-align: left;
-  padding: 6px;
-}
-#gameimg {
-  float: right;
-}
-.inputtext {
-  background: #FFFFCC;
+.logo {
+  background: url("img/site_logo.png") no-repeat;
+  background-size: contain;
   width: 90%;
-}
-td.label {
-  width: 100px;
-}
-li {
-  list-style: none;
-}
-#bannertext {
-  padding: 6px 0 0 0;
-  font-style: oblique;
-  font-weight: bold;
-  font-variant: small-caps;
-  color: #CCCCCC;
-}
-.menuspacer {
-  height: 71px;
-}
-a:link {
-  color: #6655FF;
-  text-decoration: none;
-  font-weight: bold;
-}
-a:hover {
-  color: #6666FF;
-  text-decoration: none;
-  font-weight: bold;
-}
-a:visited {
-  color: #99BBEE;
-  text-decoration: none;
-  font-weight: bold;
+  height: 90%;
 }
