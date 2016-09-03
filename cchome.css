@@ -9,15 +9,14 @@ body {
   margin: 0px 0px;
 }
 .content {
-  color: #FFFFFF;
-  background-color: #660000;
+  color: #002a95;
   margin: 71px auto;
-  padding: 6px;
+  padding: 12px 36px;
   width: 70%;
   text-align: center;
 }
 .content table {
-  color: #FFFFFF;
+  color: #002a95;
 }
 .midwidth {
   width: 60%;
@@ -35,8 +34,6 @@ body {
 #navmenu {
   background-color: #FFFFFF;
   margin: 0px auto;
-  left: 0;
-  height: 73px;
   width: 100%;
   z-index: 40;
   overflow: hide;
@@ -44,7 +41,7 @@ body {
 #navmenu ul {
   margin: 0 auto;
   list-style-type: none;
-  width: 560px;
+  width: 400px;
 }
 #navmenu li {
   float: left;
@@ -52,27 +49,16 @@ body {
   width: 100px;
   text-align: center;
 }
-#navmenu li a.textlink {
-  color: #660000;
+#navmenu li a {
+  color: #002a95;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   height: 58px;
   width: 100%;
-  padding: 15px 0px 0px 0px;
-}
-#navmenu li a.imglink {
-  color: #660000;
-  text-decoration: none;
-  display: block;
-  height: 69px;
-  width: 100%;
-  border: 0px 0px;
-  padding: 0px 0px;
-  margin: 0px 0px;
 }
 #navmenu li a:hover {
   color: white;
-  background: #660000;
+  background: #002a95;
 }
 #navmenu a .background {
   position: relative;
@@ -87,15 +73,22 @@ body {
   opacity: 0.5;
   filter:alpha(opacity: 50);
 }
-#gamecontent {
-  text-align: left;
-  padding: 6px;
-}
-#gameimg {
+.screenshot {
+  width: 50%;
   float: right;
+}
+.intro {
+  height: 240px;
+}
+.intro blockquote, .intro h3{
+  text-align: center;
 }
 .inputtext {
   width: 90%;
+}
+.contact td {
+  padding-bottom: 12px;
+  vertical-align: top;
 }
 td.label {
   width: 100px;
@@ -124,13 +117,17 @@ li {
   font-style: oblique;
   font-weight: bold;
   font-variant: small-caps;
+  font-size: large;
   color: #CCCCCC;
+}
+.poems {
+  padding: 0;
 }
 .menuspacer {
   height: 71px;
 }
 a:link {
-  color: #FAFFC9;
+  color: #FF0000;
   text-decoration: none;
   font-weight: bold;
 }
@@ -145,7 +142,7 @@ a:hover:visited {
   font-weight: bold;
 }
 a:visited {
-  color: #AAAAAA;
+  color: #660000;
   text-decoration: none;
   font-weight: bold;
 }

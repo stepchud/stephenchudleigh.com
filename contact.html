@@ -5,10 +5,10 @@
   <link href="/cchome.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div class="main"> 
+  <div class="main">
     <!--#include virtual="/navmenu.html" -->
-    <div class="content narrowwidth"> 
-      <p><strong>Enter your message to send an e-mail to Stephen:</strong></p>
+    <div class="content narrowwidth contact">
+      <h2>E-mail Stephen</h2>
       <form action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
       <table width='90%'>
       <tr>
@@ -24,10 +24,13 @@
         <td><input type=text name="user_subject" class="inputtext"></td></tr>
       <tr>
         <td class='label'><strong>Message:</strong></td>
+        <td><textarea rows=10 cols=50 name="user_message" class="inputtext">I really like your website!</textarea></td>
       </tr>
       </table>
-      <center><textarea rows=10 cols=50 name="user_message" class="inputtext">I really like your website!</textarea><br />
-      <input type="submit" value="Send Message"><input type="reset"></center>
+      <div class="buttons">
+        <input type="submit" value="Send Message">
+        <input type="reset">
+      </div>
       <input type=hidden name="recipient" value="webform@stephenchudleigh.com">
       <input type=hidden name="required" value="email">
       <input type=hidden name="title" value="Thanks For Your Feedback">
