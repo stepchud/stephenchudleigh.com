@@ -76,9 +76,10 @@ body {
 .screenshot {
   width: 50%;
   float: right;
+  margin-left: 12px;
 }
 .intro {
-  height: 240px;
+  min-height: 240px;
 }
 .intro blockquote, .intro h3{
   text-align: center;
