@@ -1,42 +1,26 @@
-.content {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: small;
-	font-style: oblique;
-	line-height: 18px;
-	font-weight: normal;
+.poem {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
 	color: #006600;
+  width: 420px;
+  margin: 0 auto;
+  text-align: center;
+}
+.poem.nav {
+  letter-spacing: 3px;
+}
+.poem.nav a {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-style: normal;
+  font-weight: bold;
 	text-decoration: none;
-	background-color: #FAFFB9;
-	text-align: center;
-	padding: 13px;
-	height: auto;
-	width: auto;
-	border: thin solid #000000;
-	position: absolute;
-	left: 100px;
-	top: 50px;
-}
-a {
-  margin: 10px;
-}
-a:link {
-	font-family: "Times New Roman", Times, serif;
-	font-size: medium;
-	font-style: italic;
-	font-weight: bolder;
 	color: #006600;
 }
-a:visited {
-	font-family: "Times New Roman", Times, serif;
-	font-size: medium;
-	font-style: italic;
-	font-weight: bolder;
-	color: #006600;
+.poem.title {
+  font-size: 1.4em;
+  padding: 22px 0;
+  font-variant: small-caps;
 }
-a:hover {
-	font-family: "Times New Roman", Times, serif;
-	font-size: medium;
-	font-style: italic;
-	font-weight: bolder;
-	color: #000000;
+.poem.date {
+  font-size: 0.75em;
+  margin-top: 1em;
 }

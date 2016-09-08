@@ -8,17 +8,14 @@
 .center {
   margin: 0 auto;
 }
-.logo {
+.home .logo {
   background: url(img/site_logo_800.png) no-repeat;
   background-size: contain;
   margin-top: 50px;
   width: 800px;
   height: 400px;
 }
-.menu {
-  width: 800px;
-}
-.home ul {
+.home .menu {
   width: 800px;
 }
 .home ul li {
@@ -26,7 +23,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  /* margin-left: 30px; */
   min-width: 64px;
   min-height: 64px;
   width: 24%;
@@ -38,18 +34,129 @@
   height: 100%;
   min-height: 32px;
 }
-.game {
+#navmenu {
+  margin: 0px auto;
+  width: 100%;
+  z-index: 1000;
+}
+#navmenu ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  width: 400px;
+}
+#navmenu li {
+  float: left;
+  height: 58px;
+  width: 100px;
+  text-align: center;
+}
+#navmenu li a {
+  color: #002a95;
+  text-decoration: none;
+  display: inline-block;
+  height: 58px;
+  width: 100%;
+}
+#navmenu li a:hover {
+  color: white;
+  background: #002a95;
+}
+.content {
+  color: #002a95;
+  margin: 71px auto;
+  padding: 12px 36px;
+  width: 70%;
+  text-align: center;
+}
+.content table {
+  color: #002a95;
+}
+.nav-content {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: #ffffff;
+}
+.game p {
+  text-align: justify;
+}
+.game .menuspacer {
+  height: 50px;
+}
+.game li {
+  text-align: left;
+}
+.screenshot {
+  width: 50%;
+  float: right;
+  margin-left: 12px;
+}
+.intro {
+  min-height: 240px;
+}
+.intro blockquote, .intro h3 {
+  text-align: center;
+}
+.contact .inputtext {
+  width: 300px;
+  padding: 7px;
+}
+.content.contact {
+  width: 500px;
+}
+.contact form {
+  padding-left: 60px;
+}
+.contact td {
+  padding-bottom: 7px;
+  vertical-align: top;
+}
+td.label {
+  width: 90px;
+}
+.menu .game {
   background-image: url(img/food-diagram.png);
 }
-.poems {
-  display: none;
-}
-.github {
+.menu .github {
   background-image: url(img/github-256.png);
 }
-.twitter {
+.menu .twitter {
   background-image: url(img/twitter-icon.png);
 }
-.instagram {
+.menu .instagram {
   background-image: url(img/insta-icon.png);
+}
+.poetry-index h1 {
+  font-size: 1.4em;
+  font-variant: small-caps;
+  color: #006600;
+}
+ul.poems {
+  padding: 0;
+  list-style-type: none;
+}
+.poem-title a:link {
+  color: #006600;
+  font-variant: small-caps;
+}
+a:link {
+  color: #FF0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #555555;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover:visited {
+  color: #555555;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: #660000;
+  text-decoration: none;
+  font-weight: bold;
 }

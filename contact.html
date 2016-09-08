@@ -2,29 +2,29 @@
 <html>
 <head>
   <title>Contact Stephen: Ask a question or send comments</title>
-  <link href="/cchome.css" rel="stylesheet" type="text/css">
+  <link href="/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div class="main">
     <!--#include virtual="/navmenu.html" -->
-    <div class="content narrowwidth contact">
+    <div class="content contact">
       <h2>E-mail Stephen</h2>
       <form action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
-      <table width='90%'>
+      <table class="contact-details">
       <tr>
-        <td class='label'><strong>Your E-mail:</strong></td>
-        <td><input type=text name="email" class="inputtext"></td>
+        <td class='label'><strong>Name:</strong></td>
+        <td><input type=text name="realname" class="inputtext" placeholder="Your Name"></td>
       </tr>
       <tr>
-        <td class='label'><strong>Your Name:</strong></td>
-        <td><input type=text name="realname" class="inputtext"></td>
+        <td class='label'><strong>E-mail:</strong></td>
+        <td><input type=text name="email" class="inputtext" placeholder="your_email@example.com"></td>
       </tr>
       <tr>
         <td class='label'><strong>Subject:</strong></td>
-        <td><input type=text name="user_subject" class="inputtext"></td></tr>
+        <td><input type=text name="user_subject" class="inputtext" placeholder="Nice website!"></td></tr>
       <tr>
         <td class='label'><strong>Message:</strong></td>
-        <td><textarea rows=10 cols=50 name="user_message" class="inputtext">I really like your website!</textarea></td>
+        <td><textarea rows=10 cols=50 name="user_message" class="inputtext" placeholder="That rug really tied the room together."></textarea></td>
       </tr>
       </table>
       <div class="buttons">
@@ -34,7 +34,7 @@
       <input type=hidden name="recipient" value="webform@stephenchudleigh.com">
       <input type=hidden name="required" value="email">
       <input type=hidden name="title" value="Thanks For Your Feedback">
-      <input type=hidden name="return_link_url" value="http://stephenchudleigh.com/index.html">
+      <input type=hidden name="return_link_url" value="http://stephenchudleigh.com/">
       <input type=hidden name="return_link_title" value="Back to stephenchudleigh.com">
       </form>
     </div>
