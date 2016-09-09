@@ -87,6 +87,10 @@
 .game li {
   text-align: left;
 }
+.game .sublist {
+  display: block;
+
+}
 .screenshot {
   width: 50%;
   float: right;
