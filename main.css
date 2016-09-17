@@ -44,23 +44,38 @@
   padding: 0;
   list-style-type: none;
   width: 400px;
+  height: 67px;
+  overflow: hidden;
 }
 #navmenu li {
   float: left;
-  height: 58px;
+  height: 67px;
   width: 100px;
-  text-align: center;
+  overflow: hidden;
 }
-#navmenu li a {
+#navmenu li .menu-item {
   color: #002a95;
   text-decoration: none;
-  display: inline-block;
-  height: 58px;
-  width: 100%;
+  text-align: center;
+  height: 67px;
+  width: 100px;
+  overflow: hidden;
 }
-#navmenu li a:hover {
-  color: white;
-  background: #002a95;
+#navmenu .text-bg, #navmenu .card-bg {
+  position: relative;
+}
+#navmenu a {
+  display: block;
+}
+#navmenu .text-bg {
+  top: -70px;
+}
+#navmenu .card-bg {
+  height: 67px;
+  width: 53px;
+  margin: 0 auto;
+  background: url(/img/cards/card-sprites.gif) no-repeat;
+  top: -70px;
 }
 .content {
   color: #002a95;

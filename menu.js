@@ -1,37 +1,62 @@
-cardSuits = new Array('d','c','h','s');
-cardRanks = new Array('2','3','4','5','6','7','8','9','10','J','Q','K','A');
-
-function cardUrl(){
-  suit = cardSuits[Math.floor( Math.random() * (cardSuits.length) )];
-  rank = cardRanks[Math.floor( Math.random() * (cardRanks.length) )];
-  cardImg = "/img/cards/s" + rank + suit + ".gif";
-  console.log("chosen card: " + cardImg);
-  return cardImg;
-}
-
-$(document).ready(function() {
-  MENU.init();
-});
-
-MENU = {
-  init: function() {
-    var imgUrls=new Array(5);
-    for (i=0; i<5; i++) {
-      imgUrls[i] = cardUrl();
-      console.log("imgUrl["+i+"]="+imgUrls[i]);
+(function(app) {
+  app.init = function() {
+    function cardSpriteOffset() {
+      return 53 * Math.floor(53 * Math.random()); // 53 pixels, 52 cards (0..52) inclusive
     }
-    $('#navmenu li a').each( function(key,elm) {
-      var $elem = $(this).parent();
-      var $img = "url(" + imgUrls[key] + ")";
-      console.log("$img="+$img);
+    function randomCoords() {
+      var width = window.screen.width,
+          height = window.screen.height,
+          radius = Math.sqrt(Math.pow(width/2, 2), Math.pow(height, 2)) + 80,
+          radians = Math.PI * Math.random(),
+          dirx = Math.cos(radians) * radius + width/2,
+          diry = Math.sin(radians) * radius;
+
+      console.log('coords: '+dirx+','+diry);
+      return {x: dirx, y: diry};
+    }
+    var cnt=0;
+    $('#navmenu li .menu-item').each( function(key,elm) {
+      var $elem = $(this),
+          cardBg = $elem.children('.card-bg'),
+          textBg = $elem.children('.text-bg'),
+          $sound = new Audio('/sfx/cardSlide4.wav');
+
+      cardBg.click(function(e) {
+        $(this).css('position', 'absolute');
+        var link = $(this).children('a')[0],
+            coords = randomCoords();
+        $(this).animate(
+          {
+            'left': '' + coords.x + 'px',
+            'top': '' + coords.y + 'px'
+          },
+          {
+            duration: 600,
+            complete: function(e){
+              document.location = link.href;
+            },
+          });
+      });
+      cnt++;
+
       $(this).hover(
         function() {
-          $elem.css({'background-image': $img});
+          var cardx = cardSpriteOffset();
+          var bgposx = "-" + (cardx) + "px";
+          randomCoords();
+          cardBg.css({'background-position-x': bgposx});
+          cardBg.animate({'top': '0px'}, 200, 'swing', function(){$sound.play();});
+          textBg.animate({'top': '0px'}, 200);
         },
         function() {
-          $elem.css({'background-image': "none"});
+          cardBg.animate({'top': '-70px'}, 400);
+          textBg.animate({'top': '-70px'}, 400);
         }
       );
     });
   }
-};
+
+  document.addEventListener('DOMContentLoaded', function() {
+    app.init();
+  });
+})(window.app || (window.app = {}));
