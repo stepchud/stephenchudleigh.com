@@ -1,0 +1,28 @@
+Stephen Chudleigh
+http://stephenchudleigh.com/contact.html
+
+Mission
+I’m passionate about learning, creating, beautiful code, and solving difficult problems.
+Work
+Senior Software developer, vango — San francisco, CA — July 2015-July 2016
+Lead the Rails/backend server team. Developed the data APIs for Vango mobile app (iOS). Primary code/PR reviewer responsible for maintaining code quality and continuous deployment process on AWS. Implemented the “Vango Weekly” artwork recommendations system integration in partnership with Tamber, the engine provider. Created React components for website user and admin features.
+
+Senior Software developer, Spiceworks — Austin, TX — december 2009-Present
+Rails developer owning the Help Desk Tool for several years. Built Remote Help Desk, software licensing, knowledge base and Help Desk 2.0 UI backbone.js rewrite. Founding member of the Network Monitor team — a new product line built with lean methodologies, launched within a year from conception.
+Worked several trade shows, training seminars, live streams, and user conferences meeting users, teaching them about the product and solving their issues.
+
+Co-founder, technology lead, autonomy medical — Austin, TX — 2007-2009
+Co-founded a medical technology startup focused on digitizing handwritten doctor’s notes. Created a Rails web application for uploading, processing, and displaying the digitized notes and patient records as well as a billing component. Document processing and storage on AWS. DevOps responsibilities for keeping the servers online. Handled all technology decisions, development, and operations for the startup.
+
+Software Developer, jpMorgan Chase — Houston, TX — 2004-2006
+Designed, implemented and tested new features on a Java application server and applet. The Marginal Pricer Java applet calculated credit risk across a portfolio of derivative transactions using Monte Carlo simulations. Perl and shell scripting.
+
+Lead Software Developer, FERN Systems — Dallas, TX — 2003-2004
+Developed a web application to allow user modification and customization of databases through the browser. Java/JSP and DB2 based system. Primary developer for the small startup.
+
+Education
+Texas A&M University, College Station, TX — B.S. Computer Science, 2002
+
+Skills
+Ruby/Rails, SQL, HTML/CSS/JS, Redis, React, Backbonejs, Baconjs, AWS, Java, LAMP, Git, Wordpress, Swift
+Agile/SCRUM methodologies, Lean startups, Continuous integration & deployment
