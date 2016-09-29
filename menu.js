@@ -5,13 +5,18 @@
     }
     function randomCoords() {
       var width = $(window).width(),
+          left = 0,
+          center = width/2,
+          right = width - 90,
           height = $(window).height(),
-          radius = Math.sqrt(Math.pow(width/2+200, 2) + Math.pow(height, 2)),
-          radians = Math.PI * Math.random(),
-          dirx = Math.cos(radians) * radius + width/2,
-          diry = Math.sin(radians) * radius;
+          down = height - 90,
+          // radius = Math.sqrt(Math.pow(width/2+200, 2) + Math.pow(height, 2)),
+          // radians = Math.PI * Math.random(),
+          player = Math.floor(5 * Math.random());
+          dirx = [left, left, center, right, right][player],
+          diry = [0, down, down, down, 0][player];
 
-      // console.log('radius, coords: '+radius+', '+dirx+'&'+diry);
+      // console.log('player, coords: '+player+', '+dirx+'&'+diry);
       return {x: dirx, y: diry};
     }
     var cnt=0;
@@ -45,7 +50,6 @@
         function() {
           var cardx = cardSpriteOffset();
           var bgposx = "-" + (cardx) + "px";
-          randomCoords();
           cardBg.css({'background-position-x': bgposx});
           cardBg.animate({'top': '0px'}, 200, 'swing', function(){hovSound.play();});
           textBg.animate({'top': '0px'}, 200);
