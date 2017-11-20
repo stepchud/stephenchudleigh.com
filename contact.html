@@ -9,7 +9,7 @@
     <!--#include virtual="/navmenu.html" -->
     <div class="content contact">
       <h2>E-mail Stephen</h2>
-      <form action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
+      <form action="https://formspree.io/webform@stephenchudleigh.com" method="POST">
       <table class="contact-details">
       <tr>
         <td class='label'><strong>Name:</strong></td>
@@ -21,21 +21,17 @@
       </tr>
       <tr>
         <td class='label'><strong>Subject:</strong></td>
-        <td><input type=text name="user_subject" class="inputtext" placeholder="Nice website!"></td></tr>
+        <td><input type=text name="_subject" class="inputtext" placeholder="Nice website!"></td></tr>
       <tr>
         <td class='label'><strong>Message:</strong></td>
         <td><textarea rows=10 cols=50 name="user_message" class="inputtext" placeholder="That rug really tied the room together."></textarea></td>
       </tr>
       </table>
+      <input type=hidden name="_next" value="http://stephenchudleigh.com/">
       <div class="buttons">
         <input type="submit" value="Send Message">
         <input type="reset">
       </div>
-      <input type=hidden name="recipient" value="webform@stephenchudleigh.com">
-      <input type=hidden name="required" value="email">
-      <input type=hidden name="title" value="Thanks For Your Feedback">
-      <input type=hidden name="return_link_url" value="http://stephenchudleigh.com/">
-      <input type=hidden name="return_link_title" value="Back to stephenchudleigh.com">
       </form>
     </div>
   </div>
