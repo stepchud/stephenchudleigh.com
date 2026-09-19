@@ -7,7 +7,7 @@ Work
 Senior Software developer, vango — San francisco, CA — July 2015-July 2016
 Lead the Rails/backend server team. Developed the data APIs for Vango mobile app (iOS). Primary code/PR reviewer responsible for maintaining code quality and continuous deployment process on AWS. Implemented the “Vango Weekly” artwork recommendations system integration in partnership with Tamber, the engine provider. Created React components for website user and admin features.
 
-Senior Software developer, Spiceworks — Austin, TX — december 2009-Present
+Senior Software developer, Spiceworks — Austin, TX — December 2009-June 2015
 Rails developer owning the Help Desk Tool for several years. Built Remote Help Desk, software licensing, knowledge base and Help Desk 2.0 UI backbone.js rewrite. Founding member of the Network Monitor team — a new product line built with lean methodologies, launched within a year from conception.
 Worked several trade shows, training seminars, live streams, and user conferences meeting users, teaching them about the product and solving their issues.
 
