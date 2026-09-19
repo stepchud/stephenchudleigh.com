@@ -13,25 +13,19 @@ SRC=$(cd "$(dirname "$0")" && pwd)
 OUT="$SRC/dist"
 
 rm -rf "$OUT"
-mkdir -p "$OUT"
+
+# Copy and expand in Python: the Pages build image has python3 but no rsync.
+python3 - "$SRC" "$OUT" <<'PY'
+import os, re, shutil, sys
+
+src, out = sys.argv[1], sys.argv[2]
 
 # Everything except VCS, editor leftovers, the build itself, and the Apache
 # config that Pages has no use for.
-rsync -a \
-  --exclude='.git/' \
-  --exclude='.git*' \
-  --exclude='dist/' \
-  --exclude='build.sh' \
-  --exclude='.DS_Store' \
-  --exclude='*.un~' \
-  --exclude='.htaccess' \
-  "$SRC/" "$OUT/"
+shutil.copytree(src, out, ignore=shutil.ignore_patterns(
+    '.git*', 'dist', 'build.sh', '.DS_Store', '*.un~', '.htaccess'))
 
 # Expand the SSI includes in place.
-python3 - "$SRC" "$OUT" <<'PY'
-import os, re, sys
-
-src, out = sys.argv[1], sys.argv[2]
 DIRECTIVE = re.compile(rb'<!--#include\s+virtual="([^"]+)"\s*-->')
 
 partials = {}
