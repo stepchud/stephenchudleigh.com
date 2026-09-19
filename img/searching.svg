@@ -1,26 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 200" width="260" height="200" role="img" aria-label="A figure searching the ground with a magnifying glass">
-  <g fill="none" stroke="#002a95" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <!-- ground, with a trail of footprints behind -->
-    <path d="M10 172 H250"/>
-    <path d="M22 168 h7 M42 164 h7 M62 168 h7" stroke-width="2.5" opacity=".45"/>
-    <!-- head, tipped toward the lens -->
-    <circle cx="112" cy="58" r="14"/>
-    <path d="M120 56 l3 1"/>
-    <!-- body, bent over -->
-    <path d="M110 72 C112 90 116 104 118 122"/>
-    <!-- legs mid-stride -->
-    <path d="M118 122 L102 146 L96 170 L104 170"/>
-    <path d="M118 122 L132 146 L140 170 L148 170"/>
-    <!-- back arm -->
-    <path d="M111 84 L96 102 L90 118"/>
-    <!-- front arm holding the glass -->
-    <path d="M112 84 L134 100 L152 110"/>
-    <!-- magnifying glass -->
-    <path d="M152 110 L164 122" stroke-width="5"/>
-    <circle cx="176" cy="134" r="16"/>
-    <path d="M168 128 a9 9 0 0 1 8 -4" stroke-width="2" opacity=".5"/>
-    <!-- question mark -->
-    <path d="M78 26 a9 9 0 1 1 13 8 c-4 2 -5 4 -5 9"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="A magnifying glass">
+  <g fill="none" stroke="#002a95" stroke-linecap="round">
+    <circle cx="48" cy="48" r="30" stroke-width="6"/>
+    <path d="M32 40 a18 18 0 0 1 14 -12" stroke-width="3" opacity=".4"/>
+    <path d="M70 70 L102 102" stroke-width="12"/>
   </g>
-  <circle cx="86" cy="52" r="2" fill="#002a95"/>
 </svg>
