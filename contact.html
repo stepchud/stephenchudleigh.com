@@ -10,30 +10,35 @@
 
     <div class="content contact">
       <h2>E-mail Stephen</h2>
-      <form action="https://formspree.io/webform@stephenchudleigh.com" method="POST">
+      <form id="contact" action="mailto:stephen@stephenchudleigh.com">
       <table class="contact-details">
       <tr>
-        <td class='label'><strong>Name:</strong></td>
-        <td><input type=text name="realname" class="inputtext" placeholder="Your Name"></td>
-      </tr>
-      <tr>
-        <td class='label'><strong>E-mail:</strong></td>
-        <td><input type=text name="email" class="inputtext" placeholder="your_email@example.com"></td>
-      </tr>
-      <tr>
         <td class='label'><strong>Subject:</strong></td>
-        <td><input type=text name="_subject" class="inputtext" placeholder="Nice website!"></td></tr>
+        <td><input type=text name="subject" class="inputtext" placeholder="Nice website!"></td></tr>
       <tr>
         <td class='label'><strong>Message:</strong></td>
-        <td><textarea rows=10 cols=50 name="user_message" class="inputtext" placeholder="That rug really tied the room together."></textarea></td>
+        <td><textarea rows=10 cols=50 name="body" class="inputtext" placeholder="That rug really tied the room together."></textarea></td>
       </tr>
       </table>
-      <input type=hidden name="_next" value="http://stephenchudleigh.com/">
       <div class="buttons">
-        <input type="submit" value="Send Message">
+        <input type="submit" value="Open in E-mail">
         <input type="reset">
       </div>
       </form>
+      <p>Or write to <a href="mailto:stephen@stephenchudleigh.com">stephen@stephenchudleigh.com</a> directly.</p>
+      <script type="text/javascript">
+        // Hand the message to the visitor's mail app. Building the URL here,
+        // rather than submitting the form to mailto:, percent-encodes spaces
+        // instead of turning them into "+", which some mail apps show as-is.
+        document.getElementById('contact').onsubmit = function () {
+          var f = this;
+          // Split so Cloudflare's email obfuscation leaves the script alone.
+          location.href = 'mailto:stephen' + '@' + 'stephenchudleigh.com' +
+            '?subject=' + encodeURIComponent(f.subject.value) +
+            '&body=' + encodeURIComponent(f.body.value);
+          return false;
+        };
+      </script>
     </div>
   </div>
 </body>
