@@ -10,7 +10,7 @@
 
     <div class="content contact">
       <h2>E-mail Stephen</h2>
-      <form id="contact" action="mailto:stephen@stephenchudleigh.com">
+      <form id="contact">
       <table class="contact-details">
       <tr>
         <td class='label'><strong>Subject:</strong></td>
@@ -27,17 +27,17 @@
       </form>
       <p>Or write to <a href="mailto:stephen@stephenchudleigh.com">stephen@stephenchudleigh.com</a> directly.</p>
       <script type="text/javascript">
-        // Hand the message to the visitor's mail app. Building the URL here,
-        // rather than submitting the form to mailto:, percent-encodes spaces
-        // instead of turning them into "+", which some mail apps show as-is.
-        document.getElementById('contact').onsubmit = function () {
+        // Hand the message to the visitor's mail app. The form has no action:
+        // a mailto: action makes Chrome warn that the form isn't secure, and
+        // turns spaces into "+", which some mail apps show as-is.
+        document.getElementById('contact').addEventListener('submit', function (e) {
+          e.preventDefault();
           var f = this;
           // Split so Cloudflare's email obfuscation leaves the script alone.
           location.href = 'mailto:stephen' + '@' + 'stephenchudleigh.com' +
             '?subject=' + encodeURIComponent(f.subject.value) +
             '&body=' + encodeURIComponent(f.body.value);
-          return false;
-        };
+        });
       </script>
     </div>
   </div>
